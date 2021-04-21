@@ -1,0 +1,31 @@
+{
+  "name": "eses",
+  "version": "1.0.0",
+  "description": "Ejs Scss ES6 template builder",
+  "keywords": [
+    "ejs",
+    "scss",
+    "es6",
+    "template",
+    "builder"
+  ],
+  "bin": "index.js",
+  "main": "index.js",
+  "repository": "https://github.com/jarstone/eses.git",
+  "author": "jarstone <jarstone.official@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "chokidar": "^3.5.1",
+    "colors": "^1.4.0",
+    "ejs": "^3.1.6",
+    "esbuild": "^0.11.12",
+    "globby": "^11.0.3",
+    "js-beautify": "^1.13.11",
+    "linkedom": "^0.7.3",
+    "lodash.merge": "^4.6.2",
+    "postcss": "^8.2.10",
+    "sass": "^1.32.11",
+    "slive-server": "^1.0.3"
+  }
+}
