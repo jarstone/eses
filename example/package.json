@@ -5,7 +5,7 @@
     "lib": "eses --lib"
   },
   "devDependencies": {
-    "eses": "^1.0.0"
+    "eses": "^1.0.1"
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
