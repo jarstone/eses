@@ -12,6 +12,7 @@ const esbuild = require('esbuild')
 const postcss = require('postcss')
 const chokidar = require('chokidar')
 const beautify = require('js-beautify').html
+const condense = require('condense-newlines')
 const autoprefixer = require('autoprefixer')
 const { parseHTML } = require('linkedom')
 const { resolve, extname, basename, join, parse, posix } = require('path')
@@ -113,7 +114,7 @@ async function htmlPartial(target) {
 async function htmlBeautify(file) {
   return await new Promise(async resolve => {
     const src = join(htmlDst, file)
-    fs.writeFileSync(src, beautify(fs.readFileSync(src, 'utf-8'), {
+    fs.writeFileSync(src, beautify(condense(fs.readFileSync(src, 'utf-8')), {
       indent_size: 2,
       unformatted: ['pre', 'code'],
     }))
